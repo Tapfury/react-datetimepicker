@@ -192,7 +192,7 @@ function (_React$Component) {
         className: "daterangepicker",
         style: _objectSpread({
           top: x,
-          left: y,
+          left: null,
           display: showPicker
         }, theme)
       }, _react.default.createElement(_DateTimeRangePicker.DateTimeRangePicker, {
