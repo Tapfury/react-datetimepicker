@@ -42,7 +42,7 @@ class DateTimeRangeContainer extends React.Component {
   resize() {
     const domNode = findDOMNode(this).children[0];
     let boundingClientRect = domNode.getBoundingClientRect();
-    let widthRightOfThis = window.innerWidth - boundingClientRect.x;
+    let widthRightOfThis = boundingClientRect.x + boundingClientRect.width;
     if (widthRightOfThis < mobileBreakPoint) {
       // If in small mode put picker in middle of child
       let childMiddle = boundingClientRect.width / 2;
