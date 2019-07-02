@@ -97,7 +97,7 @@ function (_React$Component) {
     value: function resize() {
       var domNode = (0, _reactDom.findDOMNode)(this).children[0];
       var boundingClientRect = domNode.getBoundingClientRect();
-      var widthRightOfThis = window.innerWidth - boundingClientRect.x;
+      var widthRightOfThis = boundingClientRect.x + boundingClientRect.width;
 
       if (widthRightOfThis < mobileBreakPoint) {
         // If in small mode put picker in middle of child
